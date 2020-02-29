@@ -272,12 +272,7 @@ endif(NOT IL_NO_EXR)
 
 if(IL_USE_DXTC_NVIDIA)
   list(APPEND incs ${NVTT_INCLUDE_DIR} )
-  list(APPEND libs ${NVTT_LIBRARY} )
-endif(IL_USE_DXTC_NVIDIA)
-
-if(IL_USE_DXTC_NVIDIA)
-  list(APPEND incs ${NVTT_INCLUDE_DIR} )
-  list(APPEND libs ${NVTT_LIBRARY} )
+  list(APPEND libs ${NVTT_LIBRARIES} )
 endif(IL_USE_DXTC_NVIDIA)
 
 if(IL_USE_DXTC_SQUISH)
