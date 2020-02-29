@@ -7,13 +7,12 @@ file(GLOB ILUT_INC include/*.h ../include/IL/devil_internal_exports.h ../include
 file(GLOB ILUT_RSRC)
 
 # From http://stackoverflow.com/questions/17317350/compiling-32-and-64-bit
-MESSAGE(" ")
 if( CMAKE_SIZEOF_VOID_P EQUAL 8 )
-    MESSAGE( "64 bit compiler detected" )
+    MESSAGE( "DevILUT, 64 bit compiler detected" )
     SET( EX_PLATFORM 64 )
     SET( EX_PLATFORM_NAME "x64" )
 else( CMAKE_SIZEOF_VOID_P EQUAL 8 ) 
-    MESSAGE( "32 bit compiler detected" )
+    MESSAGE( "DevILUT, 32 bit compiler detected" )
     SET( EX_PLATFORM 32 )
     SET( EX_PLATFORM_NAME "x86" )
 endif( CMAKE_SIZEOF_VOID_P EQUAL 8 )
