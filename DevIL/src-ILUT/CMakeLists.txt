@@ -20,7 +20,7 @@ endif( CMAKE_SIZEOF_VOID_P EQUAL 8 )
 include_directories( include ../include )
 
 # Find glut
-find_package(GLUT REQUIRED)
+find_package(GLUT)
 include_directories(${GLUT_INCLUDE_DIRS})
 link_directories(${GLUT_LIBRARY_DIRS})
 add_definitions(${GLUT_DEFINITIONS})
